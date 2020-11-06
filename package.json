@@ -1,0 +1,12 @@
+{
+  "name": "eleventy-load-file",
+  "version": "0.0.1",
+  "description": "File loader for Eleventy using eleventy-load",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "https://github.com/gregives/eleventy-load-file",
+  "author": "Greg Ives",
+  "license": "MIT"
+}
