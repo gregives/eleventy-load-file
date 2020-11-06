@@ -1,3 +1,14 @@
-module.exports = (content, options) => {
-  console.log("Hello files");
+const path = require("path");
+
+module.exports = function (content, options = {}) {
+  const { name, publicPath, outputPath } = {
+    ...{
+      publicPath: this.config.dir.output,
+      outputPath: "assets",
+      name: this.resource,
+    },
+    ...options,
+  };
+  const filepath = path.posix.join(publicPath, outputPath, name);
+  return path.posix.relative(publicPath, this.emitFile(content, filepath));
 };
