@@ -10,5 +10,9 @@ module.exports = function (content, options = {}) {
     ...options,
   };
   const filepath = path.posix.join(publicPath, outputPath, name);
-  return path.posix.relative(publicPath, this.emitFile(content, filepath));
+  const route = path.posix.relative(
+    publicPath,
+    this.emitFile(content, filepath)
+  );
+  return path.posix.join("/", route);
 };
