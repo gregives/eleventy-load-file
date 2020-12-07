@@ -5,7 +5,7 @@ module.exports = function (content, options = {}) {
     ...{
       publicPath: this.config.dir.output,
       outputPath: "assets",
-      name: this.resource,
+      name: "[name].[hash].[ext]",
     },
     ...options,
   };
