@@ -16,3 +16,5 @@ module.exports = function (content, options = {}) {
   );
   return path.posix.join("/", route);
 };
+
+module.exports.raw = true
