@@ -3,7 +3,7 @@ const path = require("path");
 module.exports = function (content, options = {}) {
   const { name, publicPath, outputPath } = {
     ...{
-      publicPath: this.config.dir.output,
+      publicPath: this.config.outputDir,
       outputPath: "assets",
       name: "[hash].[ext]",
     },
