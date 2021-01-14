@@ -1,7 +1,7 @@
 {
   "name": "eleventy-load-file",
   "version": "0.0.1",
-  "description": "File loader for Eleventy using eleventy-load",
+  "description": "Emit files to the Eleventy output directory using eleventy-load",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
