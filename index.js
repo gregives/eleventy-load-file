@@ -2,18 +2,18 @@ const path = require("path");
 
 module.exports = function (content, _options) {
   const options = {
-    publicPath: this.config.outputDir,
-    outputPath: "assets",
     name: "[hash].[ext]",
+    outputPath: this.config.outputDir,
+    publicPath: "assets",
     ..._options,
   };
   const filepath = path.posix.join(
-    options.publicPath,
     options.outputPath,
+    options.publicPath,
     options.name
   );
   const route = path.posix.relative(
-    options.publicPath,
+    options.outputPath,
     this.emitFile(content, filepath)
   );
   return path.posix.join("/", route);
