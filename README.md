@@ -75,6 +75,14 @@ Type: `String` Default: `"assets"`
 
 Public path for the emitted file within the output directory. By default, the file will be saved into an `assets` folder, so the URL returned from eleventy-load-file will resemble `/assets/styles.c0c108d2da16f77a.css`.
 
+## Placeholders
+
+The following placeholders are replaced in the `name` option:
+
+- `[ext]` the extension of the resource
+- `[name]` the basename of the resource
+- `[hash]` or `[hash:N]` the hash of the content of the resource, length `N` defaults to 8 characters
+
 <!-- References -->
 
 [npm-version-src]: https://img.shields.io/npm/v/eleventy-load-file/latest.svg
