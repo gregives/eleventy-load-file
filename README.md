@@ -55,7 +55,7 @@ module.exports = function (eleventyConfig) {
 
 ### `name`
 
-Type: `String` Default: `"[hash].[ext]"`.
+Type: `String` Default: `"[hash].[ext]"`
 
 Filename template for the emitted file which can include placeholders, see the [list of placeholders below](#placeholders).
 
