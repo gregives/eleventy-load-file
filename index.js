@@ -1,6 +1,6 @@
 const path = require("path");
 
-module.exports = function (content, _options) {
+module.exports = function (content, _options = {}) {
   const options = {
     name: "[hash].[ext]",
     outputPath: this.config.outputDir,
