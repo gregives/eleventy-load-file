@@ -4,10 +4,15 @@
   "description": "Emit files to the Eleventy output directory using eleventy-load",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "release": "np"
   },
-  "repository": "https://github.com/gregives/eleventy-load-file",
+  "repository": "gregives/eleventy-load-file",
   "author": "Greg Ives",
+  "keywords": [
+    "eleventy",
+    "eleventy-load",
+    "file"
+  ],
   "license": "MIT",
   "devDependencies": {
     "eslint": "^7.16.0",
@@ -15,6 +20,7 @@
     "eslint-plugin-prettier": "^3.3.0",
     "husky": "^4.3.6",
     "lint-staged": "^10.5.3",
+    "np": "*",
     "prettier": "^2.2.1"
   },
   "husky": {
