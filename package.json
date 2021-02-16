@@ -1,6 +1,6 @@
 {
   "name": "eleventy-load-file",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Emit files to the Eleventy output directory using eleventy-load",
   "main": "index.js",
   "scripts": {
